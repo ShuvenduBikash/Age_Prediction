@@ -1,4 +1,4 @@
 *.h5
 .ipynb_checkpoints/
-data/
+.idea/
 imdb_crop/
