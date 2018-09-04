@@ -4,10 +4,10 @@ import numpy as np
 import os
 
 
-face_cascade = cv.CascadeClassifier('E:\\Projects\\Age_prediction\\data\\haarcascade_frontalface_default.xml')
+face_cascade = cv.CascadeClassifier('haarcascade_frontalface_default.xml')
 
-all_images = glob.glob("D:\Dataset\Face dataset\CACD2000\*")
-dest_root = 'E:\\Datasets\\CACD_cropped\\'
+all_images = glob.glob("CACD2000\\*")
+dest_root = 'CACD_cropped\\'
 
 
 def createFolder(directory):
@@ -19,8 +19,8 @@ def createFolder(directory):
 
 
 for i in range(14, 63):
-    createFolder('E:\\Datasets\\CACD_cropped\\train\\' + str(i))
-    createFolder('E:\\Datasets\\CACD_cropped\\test\\' + str(i))
+    createFolder('CACD_cropped\\train\\' + str(i))
+    createFolder('CACD_cropped\\test\\' + str(i))
 
 for i, image in enumerate(all_images):
 
