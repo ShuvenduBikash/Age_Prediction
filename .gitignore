@@ -111,3 +111,4 @@ venv.bak/
 models/
 results/
 checkpoints/
+logs/
